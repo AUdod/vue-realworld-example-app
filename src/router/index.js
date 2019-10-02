@@ -37,6 +37,11 @@ export default new Router({
       component: () => import("@/views/TestView")
     },
     {
+      name: "testMaps",
+      path: "/test-maps",
+      component: () => import("@/views/TestMaps")
+    },
+    {
       name: "register",
       path: "/register",
       component: () => import("@/views/Register")

@@ -51,6 +51,48 @@
   </div>
 </template>
 
+<style>
+.banner {
+  background: red; /* For browsers that do not support gradients */
+  background-color: -webkit-linear-gradient(
+    left,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  ) !important; /* For Safari 5.1 to 6.0 */
+  background-color: -o-linear-gradient(
+    right,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  ) !important; /* For Opera 11.1 to 12.0 */
+  background-color: -moz-linear-gradient(
+    right,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  ) !important; /* For Firefox 3.6 to 15 */
+  background-color: linear-gradient(
+    to right,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  ) !important; /* Standard syntax (must be last) */
+}
+</style>
+
 <script>
 import { mapGetters } from "vuex";
 import marked from "marked";
