@@ -1,7 +1,11 @@
 <template>
   <footer>
     <div class="container">
-      <router-link class="logo-font" :to="{ name: 'home', params: {} }">
+      <router-link
+        class="logo-font"
+        :to="{ name: 'home', params: {} }"
+        id="footer-brand"
+      >
         FintechSquad's bondage gay website
       </router-link>
       <span class="attribution">
@@ -19,3 +23,20 @@ export default {
   name: "RwvFooter"
 };
 </script>
+
+<style>
+#footer-brand {
+  background-image: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+</style>

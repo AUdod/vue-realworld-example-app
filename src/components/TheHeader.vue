@@ -1,7 +1,11 @@
 <template>
   <nav class="navbar navbar-light">
     <div class="container">
-      <router-link class="navbar-brand" :to="{ name: 'home' }">
+      <router-link
+        class="navbar-brand"
+        :to="{ name: 'home' }"
+        id="header-navbar"
+      >
         FintechSquad's bondage gay website
       </router-link>
       <ul v-if="!isAuthenticated" class="nav navbar-nav pull-xs-right">
@@ -94,3 +98,20 @@ export default {
   }
 };
 </script>
+
+<style>
+#header-navbar {
+  background-image: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+</style>
