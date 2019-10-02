@@ -20,7 +20,6 @@ ymaps
       center: [-8.369326, 115.166023],
       zoom: 7
     });
-    console.log(map);
   })
   .catch(error => console.log("Failed to load Yandex Maps", error));
 
